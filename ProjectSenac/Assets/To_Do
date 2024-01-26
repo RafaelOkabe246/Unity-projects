@@ -1,8 +1,0 @@
-TODO:
-
-- Protótipo de UI (X)
-- Sistema de prefab de UI de cada player()
-	- Fazer sistema de ID de jogador e UI;
-	- UI ativa quando  está no turno do jogador
-- Sistema de turno do jogador ()
-- Sistema de turno do inimigo ()
