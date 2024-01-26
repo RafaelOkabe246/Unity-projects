@@ -1,0 +1,4 @@
+repository "Projeto build Type the hack@r1a2f3@cloud"
+  path "/"
+    br "/main"
+    co "/main"

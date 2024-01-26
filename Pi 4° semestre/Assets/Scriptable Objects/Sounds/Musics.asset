@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847f832a085cea74f9a4dfcdb28ea50c, type: 3}
+  m_Name: Musics
+  m_EditorClassIdentifier: 
+  audios:
+  - audioEventName: mainMenuMusic
+    clip: {fileID: 8300000, guid: 3a112b0bfffaa7048813f5cdd75ead5e, type: 3}
+  - audioEventName: gameplayMusic
+    clip: {fileID: 0}
+  - audioEventName: bossMusic
+    clip: {fileID: 0}
+  - audioEventName: cafeteriaMusic
+    clip: {fileID: 0}

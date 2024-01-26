@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00a4f8bec3c50243bea54061d9e2816, type: 3}
+  m_Name: Level 1 - Stage 4 - Cafeteria 1
+  m_EditorClassIdentifier: 
+  levelType: 0
+  stageGrid: {fileID: 2547382346107545652, guid: 3d213db405db6494cbd22f96b7181c60, type: 3}
+  gridWidth: 7
+  gridHeight: 4
+  minEnemyNumber: 0
+  maxEnemyNumber: 0
+  minObjectNumber: 0
+  maxObjectNumber: 0
+  roomsQuantity: 1
+  buyableItems:
+  - {fileID: 7786892240902253748, guid: 3d74ed7144b42b8468c219902c3d29b0, type: 3}
+  destroyableObjects: []
+  enemies: []
+  triggerEventObjects:
+  - triggerObjectPrefab: {fileID: 467876035714659791, guid: ab91aeb6816a550438ff702f565dbb06, type: 3}
+    offsetX: 0
+    offsetY: 0
+    gridPos: {x: 6, y: 2}
+    conditionToSpawn: 1
+    spawnAnchor: 6
+  - triggerObjectPrefab: {fileID: 594657888991983003, guid: a1cb1601d9741664abcd0752cd2c3937, type: 3}
+    offsetX: 2
+    offsetY: 0
+    gridPos: {x: 2, y: 2}
+    conditionToSpawn: 1
+    spawnAnchor: 3
+  background: {fileID: 205315614229350682, guid: 85f1b58cd22d2534d85b1cb266ea794e, type: 3}

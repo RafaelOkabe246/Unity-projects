@@ -1,0 +1,25 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AudioController : MonoBehaviour
+{
+    public AudioSource SFXsounds;
+    public AudioSource Musics;
+
+    [Header("Audio clips")]
+    public AudioClip[] Steps;
+    public AudioClip Key;
+    public AudioClip Hearth_beat;
+    public AudioClip Dead;
+
+    void Update()
+    {
+        
+    }
+
+    public void AudioPlay(AudioClip sfxClip, float volume)
+    {
+        SFXsounds.PlayOneShot(sfxClip, volume);
+    }
+}

@@ -1,0 +1,24 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+[RequireComponent(typeof(Collider2D))]
+public class Trigger_event : MonoBehaviour
+{
+    public UnityEvent onTrigger;
+
+    void Awake()
+    {
+        if (onTrigger == null)
+        {
+            onTrigger = new UnityEvent();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+}
+

@@ -1,0 +1,254 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Girl : MonoBehaviour
+{
+
+    public Transform under_girl;
+    private Rigidbody2D Rig;
+    private Animator PlayerAnimator;
+
+    //Movement
+    public float speed;
+    public float jumpforce = 6f;
+    public float Super_jumpforce = 15f;
+    [SerializeField]
+    private float aircontrol;
+    public static bool canMove;
+    private Collider2D Girl_collider;
+
+    public Transform upCheck;
+    public Transform groundCheck;
+    [SerializeField]
+    private bool isGrounded;
+
+    public bool islookleft;
+    public bool isattack;
+
+    //Shot
+    public Transform ShotOrigin;
+    public GameObject shot;
+
+
+    //Ladder
+    [Header("Ladder")]
+    public float CheckRadius = 0.3f;
+    public LayerMask Whatisladder;
+    public bool isClimbing;
+    public float climbing_speed;
+    public float inputvertical;
+
+    //Take damage
+    private bool Atingida;
+
+    public LayerMask Plataform;
+
+    void Start()
+    {
+        Girl_collider = this.GetComponent<Collider2D>();
+        canMove = true;
+        Rig = GetComponent<Rigidbody2D>();
+        PlayerAnimator = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+
+        //attack
+        if (Input.GetButtonDown("Fire1") && isattack == false)
+        {
+            PlayerAnimator.SetTrigger("attack");
+            isattack = true;
+        }
+        
+
+        //Jump
+        float speedY = Rig.velocity.y;
+        if (Input.GetButtonDown("Jump") && isGrounded == true)
+        {
+            Jump();
+        }
+        else if (Input.GetButtonDown("Jump") && Input.GetKeyDown(KeyCode.RightShift) && isGrounded == true)
+        {
+            MegaJump();
+        }
+
+        //Movement
+        float h = Input.GetAxisRaw("Horizontal");
+            Vector2 dir = new Vector2(h, speedY);
+        Horizontal_Vertical_inputs(dir);
+
+        //Dialog
+        if (!canMove)
+        {
+            PlayerAnimator.SetInteger("h", (int)0);
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            return;
+        }
+
+
+        //Animator variables
+        PlayerAnimator.SetInteger("h", (int)h);
+            PlayerAnimator.SetBool("isGrounded", isGrounded);
+            PlayerAnimator.SetFloat("speedY", speedY);
+            PlayerAnimator.SetBool("isAttack", isattack);
+            PlayerAnimator.SetBool("isClimbing", isClimbing);
+
+        
+    }
+
+    void FixedUpdate()
+    {
+        //Check grounded
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.02f, Plataform);
+        ClimbingLadder();
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            if (transform.position.x < collision.gameObject.transform.position.x)
+            {
+                Rig.AddForce(new Vector2(5, 0), ForceMode2D.Impulse);
+            }
+            else if (transform.position.x > collision.gameObject.transform.position.x)
+            {
+                Rig.AddForce(new Vector2(-5, 0), ForceMode2D.Impulse);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Interactive") && Input.GetKeyDown(KeyCode.E) == true)
+        {
+            
+        }
+
+    }
+
+    private void Horizontal_Vertical_inputs(Vector2 dir)
+    {
+        if (canMove == true)
+        {
+
+            if (isGrounded == true)
+            {
+                speed = 6;
+            }
+            else
+            {
+                speed -= Time.deltaTime;
+            }
+
+
+            //Turn left and right
+            if (dir.x > 0 && islookleft == true)
+            {
+                flip();
+            }
+            else if (dir.x < 0 && islookleft == false)
+            {
+                flip();
+            }
+            Rig.velocity = (new Vector2(dir.x * speed, Rig.velocity.y));
+
+        }
+        else
+        {
+            return;
+        }
+
+        inputvertical = Input.GetAxisRaw("Vertical"); 
+    }
+
+
+    //Jump voids
+    private void Jump()
+    {
+        Rig.velocity = new Vector2(Rig.velocity.x, 0);
+        Rig.velocity += Vector2.up * jumpforce;
+    }
+    void MegaJump()
+    {
+        Rig.velocity = new Vector2(Rig.velocity.x, 0);
+        Rig.velocity += Vector2.up * Super_jumpforce;
+    }
+
+    void flip()
+    {
+        islookleft = !islookleft;
+        //float x = transform.localScale.x * -1;
+        //transform.localScale = new Vector3(x, transform.localScale.y, transform.localScale.z);
+        transform.Rotate(0f, 180f, 0f);
+    }
+
+
+    //Ladders
+    bool LadderCheck()
+    {
+        return Girl_collider.IsTouchingLayers(Whatisladder);
+    }
+
+    void ClimbingLadder()
+    {
+        bool up = Physics2D.OverlapCircle(transform.position, CheckRadius, Whatisladder);
+        bool down = Physics2D.OverlapCircle(under_girl.position + new Vector3(0, -1), CheckRadius, Whatisladder);
+
+        if (inputvertical != 0 && LadderCheck())
+        {
+            isClimbing = true;
+            Rig.isKinematic = true;
+            canMove = false;
+        }
+
+        if (isClimbing)
+        {
+            if (!down && inputvertical <= 0)
+            {
+                FinishClimbing();
+                return;
+            }
+            if (!up && inputvertical >= 0)
+            {
+                FinishClimbing();
+                return;
+            }
+
+            float y = inputvertical * climbing_speed;
+            Rig.velocity = new Vector2(0, y);
+        }
+    }
+
+    void FinishClimbing()
+    {
+        isClimbing = false;
+        Rig.isKinematic = false;
+        canMove = true;
+    }
+
+
+    void Fire()
+    {
+        Instantiate(shot, ShotOrigin.position, ShotOrigin.rotation);
+        
+    }
+
+    void OnEndAttack()
+    {
+        isattack = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawWireSphere(transform.position, 3f);
+        Gizmos.DrawWireSphere(under_girl.position + new Vector3(0, -1), 3f);
+    }
+
+    public void Dialog_Stop()
+    {
+        speed = 0;
+    }
+
+}

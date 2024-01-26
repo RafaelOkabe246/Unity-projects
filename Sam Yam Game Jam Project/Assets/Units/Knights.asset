@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521becace0705cd49a89054e8890031f, type: 3}
+  m_Name: Knights
+  m_EditorClassIdentifier: 
+  unitFaction: 0
+  AttackValue: 5
+  DefenseValue: 0
+  MoralValue: 5
+  SpeedValue: 2
+  UnitsQuantity: 30
+  ChargeValue: 5

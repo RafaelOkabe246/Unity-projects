@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Door Disable Animation
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: -180116238, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 0.18333334
+      value: {fileID: -1103496553, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 0.35
+      value: {fileID: 1721941548, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 0.53333336
+      value: {fileID: -1469365087, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 0.7
+      value: {fileID: -2092294616, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 0.8833333
+      value: {fileID: -1070639798, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 1.0666667
+      value: {fileID: 1264783161, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 1.2333333
+      value: {fileID: -1700624754, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 1.4166666
+      value: {fileID: -1269622508, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 1.5833334
+      value: {fileID: -590765885, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 1.7666667
+      value: {fileID: -1181800245, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 1.9333333
+      value: {fileID: -999885366, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 2.1166666
+      value: {fileID: -421138473, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 2.3
+      value: {fileID: -1658567045, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 2.4666667
+      value: {fileID: -1550922875, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 2.65
+      value: {fileID: 300568867, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 2.8166666
+      value: {fileID: 240167341, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - time: 3
+      value: {fileID: -753135887, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: -180116238, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -1103496553, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: 1721941548, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -1469365087, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -2092294616, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -1070639798, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: 1264783161, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -1700624754, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -1269622508, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -590765885, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -1181800245, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -999885366, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -421138473, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -1658567045, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -1550922875, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: 300568867, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: 240167341, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+    - {fileID: -753135887, guid: 676e081f76465b1489b84a4228370f77, type: 3}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 3.0166667
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events:
+  - time: 3.0166667
+    functionName: OpenDoor
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

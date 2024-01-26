@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Label text="Cost:" display-tooltip-when-elided="true" name="CostText" style="position: relative; top: 270px; left: 23px; width: 130px; height: 64px; font-size: 36px;" />
+    <ui:Label text="Info:" display-tooltip-when-elided="true" name="InfoText" style="height: -4px; position: absolute; top: 213px; left: 30px; width: 134px; font-size: 36px;" />
+    <ui:VisualElement style="height: 160px; justify-content: flex-start; top: -38px;">
+        <ui:IMGUIContainer style="height: 140px; width: 170px; background-image: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=3316425174430470091&amp;guid=60931f39ade8f4948ab59ac398275474&amp;type=3#arrow-up@2x&apos;); position: absolute; top: 5px; left: 83px;" />
+    </ui:VisualElement>
+</ui:UXML>

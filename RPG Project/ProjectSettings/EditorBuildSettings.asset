@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/Scenes/Cenas para testar mec\xE2nicas/Cenas que estou usando/Level
+      - Tutorial.unity"
+    guid: 4d7af0e29de2a9a47a18afb11a6d00eb
+  - enabled: 1
+    path: "Assets/Scenes/Cenas para testar mec\xE2nicas/Cenas que estou usando/Play_again.unity"
+    guid: 66b6ef240a7e34a4e89435124d3db4c9
+  m_configObjects: {}

@@ -1,0 +1,1 @@
+This is Non VR Virtual keyboard, made to provide a virtual keyboard input on Unity WebGL build running on mobile phones.

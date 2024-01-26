@@ -1,0 +1,82 @@
+{
+    "name": "PhysicsControls",
+    "maps": [
+        {
+            "name": "Catapult",
+            "id": "9762c3c8-315d-45be-a878-00b5e337ab7f",
+            "actions": [
+                {
+                    "name": "Launch",
+                    "type": "Button",
+                    "id": "17ef6257-3288-4a1b-85d3-6a6ae61122c1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Reset",
+                    "type": "Button",
+                    "id": "4f330860-96c5-4058-926e-0ee0d6c22be7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b2dff37f-5ace-4a7b-9196-574a0a6ab96c",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Launch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dcafb949-f4d3-406a-b38c-54b14c5b4a6a",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Car",
+            "id": "d4beba50-5d71-41a1-8285-45d326d0e8b3",
+            "actions": [
+                {
+                    "name": "Breaking",
+                    "type": "Button",
+                    "id": "5bf75e8f-d2c5-4def-b02e-dede86e45c80",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5be71838-bbbb-493e-a3ea-07a431fdab96",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Breaking",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

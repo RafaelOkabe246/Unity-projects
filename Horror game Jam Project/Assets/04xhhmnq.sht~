@@ -1,0 +1,120 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Dark_monster : MonoBehaviour
+{
+    [Header("Movement")]
+    public float speed;
+    private Rigidbody2D Rig;
+
+    [Header("Direções")]
+
+    public bool Vertical;
+    public bool Horizontal;
+    
+    //Horizontal
+    public bool isMovingRight;
+
+    //Vertical
+    public bool isMovingTop;
+
+
+    [SerializeField]
+    private Vector2 Direction;
+    public LayerMask Parede;
+
+    public bool IsMoving;
+
+
+    void Start()
+    {
+        Rig = this.GetComponent<Rigidbody2D>();
+
+        if (Vertical)
+        {
+            Direction = Vector2.up;
+            isMovingTop = true;
+        }
+        else if (Horizontal)
+        {
+            Direction = Vector2.right;
+            isMovingRight = true;
+        }
+    }
+
+
+    void Update()
+    {
+        Checking_walls();
+    }
+
+    void movement(Vector2 direction)
+    {
+        //transform.position = Vector2.MoveTowards(transform.position, direction, speed * Time.deltaTime);
+        //Rig.MovePosition((Vector2)Rig.position + direction);
+        Rig.velocity = direction * speed;
+    }
+
+    private void FixedUpdate()
+    {
+        movement(Direction);
+    }
+
+
+    void Checking_walls()
+    {
+        if (Vertical)
+        {
+            RaycastHit2D _up_info = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.up, 5f, Parede);
+            RaycastHit2D _down_info = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.down, 1f, Parede);
+
+            if(_up_info.collider.gameObject.CompareTag("Walls") == true)
+            {
+                Debug.Log("Está funcionando");
+                //Find_new_y_direction();
+                isMovingTop = false;
+                Direction = Vector2.down;
+            }
+            else if (_down_info.collider == true)
+            {
+                //Find_new_y_direction();
+                isMovingTop = true;
+                Direction = Vector2.up;
+            }
+
+        }
+
+        if (Horizontal)
+        {
+            RaycastHit2D _right_info = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.right, 1f, Parede);
+            RaycastHit2D _left_info = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.left, 1f, Parede);
+
+            if (_right_info.collider == true)
+            {
+                Find_new_x_direction();
+            }
+            else if (_left_info.collider == true)
+            {
+                Find_new_x_direction();
+            }
+        }
+
+
+    }
+
+    void Find_new_y_direction()
+    {
+        isMovingTop = !isMovingTop;
+
+        Direction = new Vector2(Direction.x , Direction.y * -1 );
+    }
+
+    void Find_new_x_direction()
+    {
+        isMovingRight = !isMovingRight;
+
+        Direction = new Vector2(Direction.x * -1, Direction.y);
+    }
+
+}

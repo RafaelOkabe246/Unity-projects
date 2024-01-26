@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4bb998a74c3f2b458e3943684817f50, type: 3}
+  m_Name: "Ladr\xE3o de \xE1gua"
+  m_EditorClassIdentifier: 
+  name: "Ladr\xE3o de \xE1gua"
+  EventText: {fileID: 4900000, guid: b1ef7e79732b5034daacef20c550cbfd, type: 3}
+  _AffectedCharacters: 0
+  _EventAffectType: 0
+  _StatusType: 0
+  StatusAffectValue: 0
+  _ItemType: 0
+  GainedItems: 0
+  EventItemReference: {fileID: 0}
+  _EventType: 0
+  Option_1: {fileID: 11400000, guid: c79688c7c4bfa8048a0f8042af296870, type: 2}
+  Option_2: {fileID: 11400000, guid: 0ccd90eda481fe64bb68eec4694e69a4, type: 2}
+  name: "Ladr\xE3o de \xE1gua"

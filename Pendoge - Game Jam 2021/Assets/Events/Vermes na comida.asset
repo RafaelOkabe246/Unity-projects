@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68099fa70033f0b4787aee7b088a5611, type: 3}
+  m_Name: Vermes na comida
+  m_EditorClassIdentifier: 
+  name: Vermes na comida
+  EventText: {fileID: 4900000, guid: 57ff4dfea06cdc64cb0671442e2a5ffc, type: 3}
+  _AffectedCharacters: 0
+  _EventAffectType: 0
+  _StatusType: 4
+  StatusAffectValue: 0
+  _ItemType: 0
+  GainedItems: -2
+  EventItemReference: {fileID: 11400000, guid: 5cf83b43080e0694bb839438a8c02970, type: 2}
+  _EventType: 1

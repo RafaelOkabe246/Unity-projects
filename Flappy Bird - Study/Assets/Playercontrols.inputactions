@@ -1,0 +1,34 @@
+{
+    "name": "Playercontrols",
+    "maps": [
+        {
+            "name": "Mobile",
+            "id": "5a25a893-39d5-4970-ab81-a162987ae68f",
+            "actions": [
+                {
+                    "name": "Tap",
+                    "type": "Button",
+                    "id": "47da209d-f194-4cc9-9d7e-e4e33098766a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "af6682d9-1d6b-4197-9649-d0928fb72dc1",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

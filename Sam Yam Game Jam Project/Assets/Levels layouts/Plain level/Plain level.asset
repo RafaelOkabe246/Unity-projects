@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa6538e49865c243bc18827af9cca3a, type: 3}
+  m_Name: Plain level
+  m_EditorClassIdentifier: 
+  _terrainScript:
+  - {fileID: 11400000, guid: 6d9be35bb7fa92149aa249e50afd3af8, type: 2}
+  - {fileID: 11400000, guid: 74d566370d34d824d846aaba38fbda42, type: 2}
+  width: 9
+  height: 5
+  enemyUnits:
+  - {fileID: 4740412666859134521, guid: e006b21691506454aa68163b55903f15, type: 3}
+  enemyUnitsSpawns:
+  - {x: 3, y: 3}
+  playerUnits:
+  - {fileID: 9182753946398305716, guid: ed1492db97318324c9ad1aa360ef545e, type: 3}
+  - {fileID: 4740412666859134521, guid: 44d9be40f0cf89041830a243e9880697, type: 3}
+  playerUnitsSpawns:
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}

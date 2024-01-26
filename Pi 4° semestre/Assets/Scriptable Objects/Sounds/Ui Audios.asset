@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847f832a085cea74f9a4dfcdb28ea50c, type: 3}
+  m_Name: Ui Audios
+  m_EditorClassIdentifier: 
+  audios:
+  - audioEventName: Click
+    clip: {fileID: 8300000, guid: 3a9604ccb9885194dadaa21ebd3dddff, type: 3}
+  - audioEventName: MoveUI
+    clip: {fileID: 8300000, guid: d3fa99d1d7db6414e9ed138d88a56379, type: 3}
+  - audioEventName: MoveUI2
+    clip: {fileID: 8300000, guid: 61ae00f253d33f841a64b49cd2243396, type: 3}
+  - audioEventName: textFillTypping
+    clip: {fileID: 0}

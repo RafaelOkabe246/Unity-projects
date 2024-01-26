@@ -1,0 +1,46 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Actions",
+            "id": "64f0b670-8b4d-46e5-b33f-20e6932fc715",
+            "actions": [
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "29e1c117-4573-4030-a4e7-663f29b41eed",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "50841ab6-ee12-4f36-adef-00103c9f8dc7",
+                    "path": "<Keyboard>/j",
+                    "interactions": "Tap,Hold",
+                    "processors": "",
+                    "groups": "Player",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Player",
+            "bindingGroup": "Player",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

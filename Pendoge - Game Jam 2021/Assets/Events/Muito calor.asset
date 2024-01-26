@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68099fa70033f0b4787aee7b088a5611, type: 3}
+  m_Name: Muito calor
+  m_EditorClassIdentifier: 
+  name: Muito calor
+  EventText: {fileID: 4900000, guid: 74cd112eb15b09f45bf8a4a966454d9f, type: 3}
+  _AffectedCharacters: 1
+  _EventAffectType: 1
+  _StatusType: 1
+  StatusAffectValue: -1
+  _ItemType: 2
+  GainedItems: 0
+  EventItemReference: {fileID: 0}
+  _EventType: 1

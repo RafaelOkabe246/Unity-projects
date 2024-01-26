@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00a4f8bec3c50243bea54061d9e2816, type: 3}
+  m_Name: Level 1 - Stage 4
+  m_EditorClassIdentifier: 
+  levelType: 2
+  stageGrid: {fileID: 2547382346107545652, guid: 8363bd131e766934fbe40c8329c6cdf3, type: 3}
+  gridWidth: 7
+  gridHeight: 5
+  minEnemyNumber: 2
+  maxEnemyNumber: 4
+  minObjectNumber: 4
+  maxObjectNumber: 5
+  roomsQuantity: 1
+  buyableItems: []
+  destroyableObjects:
+  - {fileID: 2697745427010320241, guid: 1e79d32a066681042ab6d6d9c5e08dc1, type: 3}
+  - {fileID: 2697745427010320241, guid: 1e79d32a066681042ab6d6d9c5e08dc1, type: 3}
+  - {fileID: 1834732288989687870, guid: 0500f95f78e2f0145a8be9db9dc5b6cb, type: 3}
+  enemies:
+  - {fileID: 5921954742099043142, guid: c19680003f1180e46808edeb930191c1, type: 3}
+  - {fileID: 2184739062911081125, guid: a707d98b406305b4584b787a208558d0, type: 3}
+  triggerEventObjects:
+  - triggerObjectPrefab: {fileID: 467876035714659791, guid: ab91aeb6816a550438ff702f565dbb06, type: 3}
+    offsetX: 0
+    offsetY: 0
+    gridPos: {x: 6, y: 2}
+    conditionToSpawn: 0
+    spawnAnchor: 6
+  background: {fileID: 4009371269726109190, guid: 37458a6c374cb73409b720d3085fd396, type: 3}

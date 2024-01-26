@@ -1,0 +1,4 @@
+repository "SENAC Game Jam@r1a2f3@cloud"
+  path "/"
+    br "/main"
+    co "/main"

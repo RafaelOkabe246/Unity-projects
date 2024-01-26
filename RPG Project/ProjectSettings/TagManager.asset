@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Shot
+  - Enemy
+  - Damage
+  - End
+  - "Ch\xE3o"
+  - RoomManagement
+  - Room
+  - Interactive
+  - InteractiveManager
+  - SceneManagement
+  - DialogueManager
+  - Block
+  - BossCheck
+  - Checkpoint
+  - Dead
+  - End level
+  - Fade
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Escadas
+  - Plataforma
+  - Player
+  - "Ch\xE3o"
+  - Invencible
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 2956778023
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 1913236353
+    locked: 0

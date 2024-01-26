@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87541073295132043b18ca9d8d36ad10, type: 3}
+  m_Name: "Carta de demiss\xE3o"
+  m_EditorClassIdentifier: 
+  sentences:
+  - name: Departamento de R.H.
+    texts:
+    - "Ol\xE1, funcion\xE1ria n\xFAmero 324-A."
+    - "Devido \xE0 decis\xF5es n\xE3o relacionadas \xE0 diretoria, precisamos cortar
+      as despesas do seu departamento."
+    - Sinto muito pelo inconveniente, mas precisamos pensar no melhor para a maioria.
+    - "A fam\xEDlia Business S.A. deixou um presente de despedida para voc\xEA na
+      sua mesa de trabalho."
+    - Assinado, Bob.
+  - name: "Funcion\xE1ria 324-A"
+    texts:
+    - "Que estranho n\xE3o terem demitido o Bob do R.H."
+    - Desse jeito o T.I. vai virar o R.I.
+    - "O Bob deve saber o que est\xE1 acontecendo."
